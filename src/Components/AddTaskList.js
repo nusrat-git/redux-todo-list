@@ -20,6 +20,7 @@ const AddTaskList = () => {
   }
 
   const deleteTask = id => {
+    console.log('clicked', id);
     dispatch(deletedTodo(id));
   }
 

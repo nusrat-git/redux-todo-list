@@ -23,6 +23,7 @@ export const todosSlice = createSlice(
             },
             deletedTodo: (state, action) => {
                 const id = action.payload;
+                state.todos = state.todos.filter(filtered => filtered.id !== id);
                 state.completedTodos = state.completedTodos.filter(filtered => filtered.id !== id);
             }
 
