@@ -28,7 +28,7 @@ const CompletedTask = () => {
 
       {
         completedTodos.length === 0 ?
-          <div>
+          <div className="mt-6">
             <h1 className="text-center pb-5">You have completed 0 task</h1>
           </div>
           :
